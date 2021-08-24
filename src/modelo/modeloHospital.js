@@ -1,4 +1,4 @@
-class Hoteles{
+class Hospital{
 
     constructor(id , nombre, descripcion, ubicacion, telefono, correo, logotipo, fotoGoogle, distancia, nroEstrellas){
         this.id = id; 
@@ -17,7 +17,6 @@ class Hoteles{
         return 'nombre:' + this.nombre + 'descripcion: ' + this.descripcion + 'ubicacion: ' + this.ubicacion + 'telefono: ' + this.telefono + 'correo: ' + this.correo;
     }
 
-
 }
 
-module.exports = Hoteles;
+module.exports = Hospital;
