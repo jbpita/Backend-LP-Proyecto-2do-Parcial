@@ -10,18 +10,7 @@ controlador.subirDocumento = (coleccion , {documentos}) => {
 
 
 controlador.cargarDocumentos =  (coleccion ,res ) => {
-/*
-    const peticion = async (coleccion) => {
-        const obj = await db.collection(coleccion).get();
-        const {docs} = obj;
-        const array = docs.map( doc => ({id: doc.id , datos: doc.data()}));
-        return array;
-    }
-
-    return peticion(coleccion);
-*/   //res.status(200)
     db.collection(coleccion).get().then((querySnapshot) => {
-        //console.log(querySnapshot);
         const json = {
             coleccionName: coleccion,
             datos: []
